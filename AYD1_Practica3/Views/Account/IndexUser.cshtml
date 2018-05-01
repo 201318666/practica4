@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Bienvenido!";
+}
+
+<br />
+<br />
+<h2>BIENVENIDO A SU DASHBOARD @User.Identity.Name !</h2>
+<br />
+<br />
+
+<input type="button" class="btn btn-default" value="Consultar Saldo" onclick="window.location='@Url.Action("CheckBalance", "Account")'" />
+
+<input type="button" class="btn btn-default" value="Transferencia electronica" onclick="window.location='@Url.Action("Transfer", "Account")'" />
+
+<input type="button" class="btn btn-default" value="Credito" onclick="window.location='@Url.Action("Credit", "Account")'" />
+
+<input type="button" class="btn btn-default" value="Debito" onclick="window.location='@Url.Action("Debit", "Account")'" />
+
+

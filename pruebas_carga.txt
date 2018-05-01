@@ -1,0 +1,11 @@
+1. Ir a la carpeta del proyecto:
+C:\Users\C45ASP4311F\source\repos\AYD1_Practica3
+
+2. ejecutar pruebas de carga con apache benchmark
+ab -n 1000 -c 10 http://localhost:49877/
+
+2.5 Esta genera un archivo con los datos para luego graficarlos
+ab -g resultados.csv -n 1000 -c 10 http://localhost:49877/
+
+3. Generar grafica:
+gnuplot plot.p
