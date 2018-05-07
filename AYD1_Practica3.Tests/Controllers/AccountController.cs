@@ -11,7 +11,7 @@ using AYD1_Practica3.Controllers;
 namespace AYD1_Practica3.Tests.Controllers
 {
     [TestClass]
-    public class TransferenciaControllerTest
+    public class AccountControllerTest
     {
         [TestMethod]
         public void Index()
@@ -34,10 +34,10 @@ namespace AYD1_Practica3.Tests.Controllers
             AccountController controller = new AccountController();
 
             //Act
-            bool existe = controller.ExisteDestino("DTQ5Q");
+            bool existe = controller.ExisteDestino("ONH6T");
 
             // assert 
-            Assert.IsFalse(existe, "Numero de cuenta destino no existe");
+            Assert.IsTrue(existe, "Numero de cuenta destino no existe");
         }
 
         // 
@@ -48,10 +48,10 @@ namespace AYD1_Practica3.Tests.Controllers
             AccountController controller = new AccountController();
 
             //Act
-            bool existe = controller.HayFondos("Javier", 1.2);
+            bool existe = controller.HayFondos("ONH6T", 1.2);
 
             // assert 
-            Assert.IsFalse(existe, "Cuenta destino no tiene fondos");
+            Assert.IsTrue(existe, "Cuenta destino no tiene fondos");
         }
 
     }
