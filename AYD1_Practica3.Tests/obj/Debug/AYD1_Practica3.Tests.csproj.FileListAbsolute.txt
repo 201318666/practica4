@@ -138,8 +138,6 @@ C:\Users\C45ASP4311F\source\repos\AYD1_Practica4\practica4\AYD1_Practica3.Tests\
 C:\Users\C45ASP4311F\source\repos\AYD1_Practica4\practica4\AYD1_Practica3.Tests\obj\Debug\AYD1_Practica3.Tests.csproj.CopyComplete
 C:\Users\C45ASP4311F\source\repos\AYD1_Practica4\practica4\AYD1_Practica3.Tests\obj\Debug\AYD1_Practica3.Tests.dll
 C:\Users\C45ASP4311F\source\repos\AYD1_Practica4\practica4\AYD1_Practica3.Tests\obj\Debug\AYD1_Practica3.Tests.pdb
-C:\Users\Javier\Desktop\practica4\AYD1_Practica3.Tests\obj\Debug\AYD1_Practica3.Tests.dll
-C:\Users\Javier\Desktop\practica4\AYD1_Practica3.Tests\obj\Debug\AYD1_Practica3.Tests.pdb
 C:\Users\Javier\Desktop\practica4\AYD1_Practica3.Tests\bin\Debug\ApplicationInsights.config
 C:\Users\Javier\Desktop\practica4\AYD1_Practica3.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 C:\Users\Javier\Desktop\practica4\AYD1_Practica3.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
@@ -208,3 +206,5 @@ C:\Users\Javier\Desktop\practica4\AYD1_Practica3.Tests\bin\Debug\es\Microsoft.Ow
 C:\Users\Javier\Desktop\practica4\AYD1_Practica3.Tests\obj\Debug\AYD1_Practica3.Tests.csprojResolveAssemblyReference.cache
 C:\Users\Javier\Desktop\practica4\AYD1_Practica3.Tests\obj\Debug\AYD1_Practica3.Tests.csproj.CoreCompileInputs.cache
 C:\Users\Javier\Desktop\practica4\AYD1_Practica3.Tests\obj\Debug\AYD1_Practica3.Tests.csproj.CopyComplete
+C:\Users\Javier\Desktop\practica4\AYD1_Practica3.Tests\obj\Debug\AYD1_Practica3.Tests.dll
+C:\Users\Javier\Desktop\practica4\AYD1_Practica3.Tests\obj\Debug\AYD1_Practica3.Tests.pdb

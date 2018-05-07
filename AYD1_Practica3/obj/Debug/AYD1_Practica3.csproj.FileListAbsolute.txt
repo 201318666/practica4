@@ -549,7 +549,6 @@ C:\Users\Javier\Desktop\practica4\AYD1_Practica3\bin\es\Microsoft.Owin.Security.
 C:\Users\Javier\Desktop\practica4\AYD1_Practica3\bin\es\Microsoft.Owin.Security.Google.resources.dll
 C:\Users\Javier\Desktop\practica4\AYD1_Practica3\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
 C:\Users\Javier\Desktop\practica4\AYD1_Practica3\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
-C:\Users\Javier\Desktop\practica4\AYD1_Practica3\obj\Debug\AYD1_Practica3.csprojResolveAssemblyReference.cache
 C:\Users\Javier\Desktop\practica4\AYD1_Practica3\obj\Debug\AYD1_Practica3.csproj.CoreCompileInputs.cache
 C:\Users\Javier\Desktop\practica4\AYD1_Practica3\obj\Debug\AYD1_Practica3.csproj.CopyComplete
 C:\Users\Javier\Desktop\practica4\AYD1_Practica3\obj\Debug\AYD1_Practica3.dll
