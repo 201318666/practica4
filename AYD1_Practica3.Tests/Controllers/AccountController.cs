@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using AYD1_Practica3;
-using AYD1_Practica3.Models;
 using AYD1_Practica3.Controllers;
 
 namespace AYD1_Practica3.Tests.Controllers
