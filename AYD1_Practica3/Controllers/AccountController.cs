@@ -20,6 +20,7 @@ namespace AYD1_Practica3.Controllers
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
 
+        public const string cadenaConexion = "Data Source=(LocalDb)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Javier\\Desktop\\AYD1_Practica3\\AYD1_Practica3\\App_Data\\aspnet-AYD1_Practica3-20180410094646.mdf;Initial Catalog=aspnet-AYD1_Practica3-20180410094646;Integrated Security=True";
         public AccountController()
         {
         }
@@ -61,7 +62,7 @@ namespace AYD1_Practica3.Controllers
         public ActionResult CheckBalance(string returnUrl)
         {
             ViewBag.ReturnUrl = returnUrl;
-            SqlConnection sqlCon = new SqlConnection("Data Source=(LocalDb)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Javier\\Desktop\\AYD1_Practica3\\AYD1_Practica3\\App_Data\\aspnet-AYD1_Practica3-20180410094646.mdf;Initial Catalog=aspnet-AYD1_Practica3-20180410094646;Integrated Security=True");
+            SqlConnection sqlCon = new SqlConnection(cadenaConexion);
             SqlCommand sqlCmd = new SqlCommand
             {
                 CommandText = "select Balance from AspNetUsers where UserName='" + User.Identity.Name + "';",
@@ -108,7 +109,7 @@ namespace AYD1_Practica3.Controllers
             }
             if (ExisteDestino(model.DestinationAccountNumber) && HayFondosUsuarioLogueado(Convert.ToDouble(model.Amount)))
             {
-                SqlConnection sqlCon = new SqlConnection("Data Source=(LocalDb)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Javier\\Desktop\\AYD1_Practica3\\AYD1_Practica3\\App_Data\\aspnet-AYD1_Practica3-20180410094646.mdf;Initial Catalog=aspnet-AYD1_Practica3-20180410094646;Integrated Security=True");
+               SqlConnection sqlCon = new SqlConnection(cadenaConexion);
 
                 //Monto de usuario logueado
                 SqlCommand sqlCmd = new SqlCommand
@@ -192,7 +193,7 @@ namespace AYD1_Practica3.Controllers
 
         public bool ExisteDestino(string DestinationAccountNumber)
         {
-            SqlConnection sqlCon = new SqlConnection("Data Source=(LocalDb)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Javier\\Desktop\\AYD1_Practica3\\AYD1_Practica3\\App_Data\\aspnet-AYD1_Practica3-20180410094646.mdf;Initial Catalog=aspnet-AYD1_Practica3-20180410094646;Integrated Security=True");
+           SqlConnection sqlCon = new SqlConnection(cadenaConexion);
             //Cuenta destino
             SqlCommand sqlCmd = new SqlCommand
             {
@@ -222,7 +223,7 @@ namespace AYD1_Practica3.Controllers
 
         public bool HayFondosUsuarioLogueado(double monto)
         {
-            SqlConnection sqlCon = new SqlConnection("Data Source=(LocalDb)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Javier\\Desktop\\AYD1_Practica3\\AYD1_Practica3\\App_Data\\aspnet-AYD1_Practica3-20180410094646.mdf;Initial Catalog=aspnet-AYD1_Practica3-20180410094646;Integrated Security=True");
+           SqlConnection sqlCon = new SqlConnection(cadenaConexion);
             //Monto de usuario logueado
             SqlCommand sqlCmd = new SqlCommand
             {
@@ -253,7 +254,7 @@ namespace AYD1_Practica3.Controllers
 
         public bool HayFondos(string DestinationAccountNumber, double monto)
         {
-            SqlConnection sqlCon = new SqlConnection("Data Source=(LocalDb)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Javier\\Desktop\\AYD1_Practica3\\AYD1_Practica3\\App_Data\\aspnet-AYD1_Practica3-20180410094646.mdf;Initial Catalog=aspnet-AYD1_Practica3-20180410094646;Integrated Security=True");
+           SqlConnection sqlCon = new SqlConnection(cadenaConexion);
             //Monto de usuario logueado
             SqlCommand sqlCmd = new SqlCommand
             {
@@ -314,7 +315,7 @@ namespace AYD1_Practica3.Controllers
             }
             if (ExisteDestino(model.DestinationAccountNumber))
             {
-                SqlConnection sqlCon = new SqlConnection("Data Source=(LocalDb)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Javier\\Desktop\\AYD1_Practica3\\AYD1_Practica3\\App_Data\\aspnet-AYD1_Practica3-20180410094646.mdf;Initial Catalog=aspnet-AYD1_Practica3-20180410094646;Integrated Security=True");
+               SqlConnection sqlCon = new SqlConnection(cadenaConexion);
 
                 //Monto de cuenta destino
                 SqlCommand sqlCmd3 = new SqlCommand
@@ -391,7 +392,7 @@ namespace AYD1_Practica3.Controllers
             }
             if (ExisteDestino(model.DestinationAccountNumber) && HayFondos(model.DestinationAccountNumber, Convert.ToDouble(model.Amount)))
             {
-                SqlConnection sqlCon = new SqlConnection("Data Source=(LocalDb)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Javier\\Desktop\\AYD1_Practica3\\AYD1_Practica3\\App_Data\\aspnet-AYD1_Practica3-20180410094646.mdf;Initial Catalog=aspnet-AYD1_Practica3-20180410094646;Integrated Security=True");
+               SqlConnection sqlCon = new SqlConnection(cadenaConexion);
 
                 //Monto de cuenta destino
                 SqlCommand sqlCmd3 = new SqlCommand
@@ -466,7 +467,7 @@ namespace AYD1_Practica3.Controllers
             {
                 return View(model);
             }
-            SqlConnection sqlCon = new SqlConnection("Data Source=(LocalDb)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Javier\\Desktop\\AYD1_Practica3\\AYD1_Practica3\\App_Data\\aspnet-AYD1_Practica3-20180410094646.mdf;Initial Catalog=aspnet-AYD1_Practica3-20180410094646;Integrated Security=True");
+           SqlConnection sqlCon = new SqlConnection(cadenaConexion);
             SqlCommand sqlCmd = new SqlCommand
             {
                 CommandText = "select count(AccountNumber) from AspNetUsers where AccountNumber='" + model.AccountNumber + "';",
