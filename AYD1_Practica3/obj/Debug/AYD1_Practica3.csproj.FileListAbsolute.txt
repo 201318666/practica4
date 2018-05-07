@@ -553,3 +553,4 @@ C:\Users\Javier\Desktop\practica4\AYD1_Practica3\obj\Debug\AYD1_Practica3.csproj
 C:\Users\Javier\Desktop\practica4\AYD1_Practica3\obj\Debug\AYD1_Practica3.csproj.CopyComplete
 C:\Users\Javier\Desktop\practica4\AYD1_Practica3\obj\Debug\AYD1_Practica3.dll
 C:\Users\Javier\Desktop\practica4\AYD1_Practica3\obj\Debug\AYD1_Practica3.pdb
+C:\Users\Javier\Desktop\practica4\AYD1_Practica3\obj\Debug\AYD1_Practica3.csprojResolveAssemblyReference.cache
