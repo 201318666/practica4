@@ -190,7 +190,7 @@ namespace AYD1_Practica3.Controllers
         }
 
 
-        private bool ExisteDestino(string DestinationAccountNumber)
+        public bool ExisteDestino(string DestinationAccountNumber)
         {
             SqlConnection sqlCon = new SqlConnection("Data Source=(LocalDb)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Javier\\Desktop\\AYD1_Practica3\\AYD1_Practica3\\App_Data\\aspnet-AYD1_Practica3-20180410094646.mdf;Initial Catalog=aspnet-AYD1_Practica3-20180410094646;Integrated Security=True");
             //Cuenta destino
@@ -220,7 +220,7 @@ namespace AYD1_Practica3.Controllers
             return false;
         }
 
-        private bool HayFondosUsuarioLogueado(double monto)
+        public bool HayFondosUsuarioLogueado(double monto)
         {
             SqlConnection sqlCon = new SqlConnection("Data Source=(LocalDb)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Javier\\Desktop\\AYD1_Practica3\\AYD1_Practica3\\App_Data\\aspnet-AYD1_Practica3-20180410094646.mdf;Initial Catalog=aspnet-AYD1_Practica3-20180410094646;Integrated Security=True");
             //Monto de usuario logueado
@@ -251,7 +251,7 @@ namespace AYD1_Practica3.Controllers
             return false;
         }
 
-        private bool HayFondos(string DestinationAccountNumber, double monto)
+        public bool HayFondos(string DestinationAccountNumber, double monto)
         {
             SqlConnection sqlCon = new SqlConnection("Data Source=(LocalDb)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Javier\\Desktop\\AYD1_Practica3\\AYD1_Practica3\\App_Data\\aspnet-AYD1_Practica3-20180410094646.mdf;Initial Catalog=aspnet-AYD1_Practica3-20180410094646;Integrated Security=True");
             //Monto de usuario logueado
